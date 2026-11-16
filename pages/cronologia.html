@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cronología interactiva | El maoísmo en China, 1949–1976</title>
+  <meta name="description" content="Cronología interactiva de los hechos clave del maoísmo en China entre 1949 y 1976.">
+  <link rel="stylesheet" href="../css/base/variables.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/typography.css">
+  <link rel="stylesheet" href="../css/layout/grid.css">
+  <link rel="stylesheet" href="../css/layout/header.css">
+  <link rel="stylesheet" href="../css/layout/navigation.css">
+  <link rel="stylesheet" href="../css/layout/footer.css">
+  <link rel="stylesheet" href="../css/components/buttons.css">
+  <link rel="stylesheet" href="../css/pages/interior.css">
+  <link rel="stylesheet" href="../css/pages/cronologia.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-page="cronologia" data-root="../">
+  <div id="site-header"></div>
+
+  <main id="contenido">
+    <header class="page-head">
+      <div class="container">
+        <h1>Cronología interactiva</h1>
+        <p class="lede">Once momentos entre 1949 y 1976. Selecciona uno en la línea o usa las flechas del teclado.</p>
+      </div>
+    </header>
+
+    <div id="cronologia-app">
+      <section class="chrono-section surface-dark" aria-label="Línea temporal">
+        <div class="container">
+          <div class="chrono-filters" id="chrono-filters" role="group" aria-label="Filtrar por categoría"></div>
+        </div>
+        <div class="chrono-scroller" id="chrono-scroller" tabindex="0" aria-label="Línea temporal de 1949 a 1976, desplazable horizontalmente"></div>
+        <p class="container chrono-hint muted">Desliza la línea para recorrer los años. Las barras rojas indican períodos.</p>
+        <noscript><p class="container">Esta cronología necesita JavaScript activado.</p></noscript>
+      </section>
+
+      <section class="chrono-panel-section surface-light" aria-label="Detalle del acontecimiento">
+        <div class="container">
+          <article class="chrono-panel" id="chrono-panel" aria-live="polite" aria-labelledby="panel-titulo">
+            <figure class="panel-photo" id="panel-foto"></figure>
+            <div class="panel-body">
+              <p class="panel-fecha" id="panel-fecha"></p>
+              <h2 id="panel-titulo"></h2>
+              <div class="prose" id="panel-descripcion"></div>
+              <section>
+                <h3>Actores relevantes</h3>
+                <ul class="tags" id="panel-actores"></ul>
+              </section>
+              <section>
+                <h3>Consecuencias</h3>
+                <ul class="bullets" id="panel-consecuencias"></ul>
+              </section>
+              <section>
+                <h3>Fuentes documentales</h3>
+                <ul class="source-list" id="panel-fuentes"></ul>
+              </section>
+            </div>
+            <div class="panel-nav">
+              <button class="btn btn--ghost" id="chrono-prev" type="button">Anterior</button>
+              <span class="muted" id="chrono-count"></span>
+              <button class="btn" id="chrono-next" type="button">Siguiente</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section surface-dark" aria-label="Todos los acontecimientos">
+        <div class="container">
+          <div class="section-head">
+            <h2>Todos los acontecimientos</h2>
+            <p class="muted">Cada tarjeta abre su detalle en el panel.</p>
+          </div>
+          <div class="chrono-cards" id="chrono-cards"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>

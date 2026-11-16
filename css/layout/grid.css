@@ -1,0 +1,6 @@
+.container { width: min(100% - 2.5rem, var(--maxw)); margin-inline: auto; }
+.surface-dark { background: var(--ink); color: var(--text-on-dark); }
+.surface-light { background: var(--paper); color: var(--text-on-light); }
+.section { padding-block: var(--space-5); }
+.skip-link { position: absolute; left: -999px; top: 0; background: var(--gold); color: var(--ink); padding: .5rem 1rem; z-index: 100; }
+.skip-link:focus { left: 0; }

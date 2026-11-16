@@ -1,0 +1,5 @@
+.page-head { padding-block: var(--space-5) var(--space-4); background: radial-gradient(ellipse at 90% 0%, rgba(122,26,31,.5), transparent 60%), var(--ink); border-bottom: 1px solid rgba(184,148,74,.3); }
+.page-head h1 { font-size: var(--step-3); margin-bottom: var(--space-2); }
+.page-head .lede { color: var(--paper); }
+.pending-note { max-width: 40rem; padding: var(--space-3); background: var(--paper-light); border-left: 4px solid var(--crimson); }
+.pending-note .btn { margin-top: var(--space-2); }

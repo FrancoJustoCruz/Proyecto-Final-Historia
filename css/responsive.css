@@ -1,0 +1,4 @@
+@media (max-width: 40rem) {
+  .section { padding-block: var(--space-4); }
+  .hero { padding-block: var(--space-5) var(--space-4); }
+}

@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Investigación histórica sobre el maoísmo en China entre 1949 y 1976.">
-        <title>El Maoísmo en China (1949-1976)</title>
-    </head>
-    <body>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El maoísmo en China, 1949–1976 | Archivo digital</title>
+  <meta name="description" content="Archivo digital académico sobre la transformación y los costos humanos del maoísmo en China entre 1949 y 1976.">
+  <link rel="stylesheet" href="css/base/variables.css">
+  <link rel="stylesheet" href="css/base/reset.css">
+  <link rel="stylesheet" href="css/base/typography.css">
+  <link rel="stylesheet" href="css/layout/grid.css">
+  <link rel="stylesheet" href="css/layout/header.css">
+  <link rel="stylesheet" href="css/layout/navigation.css">
+  <link rel="stylesheet" href="css/layout/footer.css">
+  <link rel="stylesheet" href="css/components/buttons.css">
+  <link rel="stylesheet" href="css/components/cards.css">
+  <link rel="stylesheet" href="css/components/timeline.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="home" data-root="">
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div id="site-header"></div>
+
+  <nav class="side-dots" aria-label="Secciones de la portada">
+    <a href="#inicio" data-dot="inicio"><span>Inicio</span></a>
+    <a href="#momentos" data-dot="momentos"><span>Momentos clave</span></a>
+    <a href="#linea-tiempo" data-dot="linea-tiempo"><span>Cronología</span></a>
+    <a href="#secciones" data-dot="secciones"><span>Secciones</span></a>
+  </nav>
+
+  <main id="contenido">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-photo" role="img" aria-label="Fotografía histórica de la China maoísta"></div>
+      <div class="container hero-grid">
+        <div class="hero-main">
+          <p class="hero-period">1949–1976</p>
+          <h1>EL MAOÍSMO<br>EN CHINA</h1>
+        </div>
+        <aside class="question">
+          <h2>Pregunta central</h2>
+          <p>¿Hasta qué punto el maoísmo transformó la sociedad, la economía y la política de China entre 1949 y 1976, y cuáles fueron los costos humanos y sociales de esa transformación?</p>
+        </aside>
+      </div>
+      <p class="hero-caption container">Fotografía histórica: crédito y licencia por completar.</p>
+      <a class="scroll-cue" href="#momentos" aria-label="Desplazarse a los momentos clave"><span></span></a>
+    </section>
+
+    <!-- INTRODUCCIÓN -->
+    <section class="intro surface-light">
+      <div class="container intro-grid">
+        <h2 class="reveal">Veintisiete años que reorganizaron un país</h2>
+        <div class="prose reveal">
+          <p>En 1949, el Partido Comunista de China, liderado por Mao Zedong, estableció la República Popular tras décadas de guerra civil y conflicto con Japón.</p>
+          <p>Durante los siguientes veintisiete años, el gobierno impulsó reformas agrarias, planes de industrialización y campañas políticas de alcance masivo que reconfiguraron la vida cotidiana. Este archivo examina esas transformaciones y los costos humanos que las acompañaron.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOMENTOS CLAVE -->
+    <section class="section surface-dark" id="momentos">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Cuatro momentos para empezar</h2>
+          <p class="muted">Una primera lectura; el detalle y las fuentes están en la cronología.</p>
+        </div>
+        <div class="moments">
+          <a class="moment moment--lead reveal" href="pages/cronologia.html#1949">
+            <span class="moment-year">1949</span>
+            <h3>Se proclama la República Popular China</h3>
+            <p>El 1 de octubre, Mao Zedong proclama en Pekín la República Popular tras la victoria comunista en la guerra civil.</p>
+          </a>
+          <a class="moment reveal" href="pages/cronologia.html#1958">
+            <span class="moment-year">1958</span>
+            <h3>Comienza el Gran Salto Adelante</h3>
+            <p>Campaña para acelerar la industrialización y reorganizar el campo mediante las comunas populares.</p>
+          </a>
+          <a class="moment reveal" href="pages/cronologia.html#1966">
+            <span class="moment-year">1966</span>
+            <h3>Se inicia la Revolución Cultural</h3>
+            <p>Movimiento político que se extendería hasta 1976 y alteró las instituciones del Partido y del Estado.</p>
+          </a>
+          <a class="moment reveal" href="pages/cronologia.html#1976">
+            <span class="moment-year">1976</span>
+            <h3>Muere Mao Zedong</h3>
+            <p>Fallece el 9 de septiembre. En octubre es detenida la llamada Banda de los Cuatro.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO A LA CRONOLOGÍA -->
+    <section class="section timeline-intro" id="linea-tiempo">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>La cronología de un vistazo</h2>
+          <p class="muted">Desliza para recorrer los años; cada hito abre la cronología completa.</p>
+        </div>
+      </div>
+      <div class="tl-scroller reveal" tabindex="0" aria-label="Hitos de la cronología, desplazable horizontalmente">
+        <ol class="tl-strip">
+          <li><a href="pages/cronologia.html#1949"><span class="tl-year">1949</span><span class="tl-label">Proclamación de la República Popular</span></a></li>
+          <li><a href="pages/cronologia.html#1950"><span class="tl-year">1950</span><span class="tl-label">Ley de Reforma Agraria</span></a></li>
+          <li><a href="pages/cronologia.html#1953"><span class="tl-year">1953</span><span class="tl-label">Primer Plan Quinquenal</span></a></li>
+          <li><a href="pages/cronologia.html#1957"><span class="tl-year">1957</span><span class="tl-label">Campaña Antiderechista</span></a></li>
+          <li><a href="pages/cronologia.html#1958"><span class="tl-year">1958</span><span class="tl-label">Gran Salto Adelante</span></a></li>
+          <li><a href="pages/cronologia.html#1966"><span class="tl-year">1966</span><span class="tl-label">Revolución Cultural</span></a></li>
+          <li><a href="pages/cronologia.html#1976"><span class="tl-year">1976</span><span class="tl-label">Muerte de Mao Zedong</span></a></li>
+        </ol>
+      </div>
+      <div class="container tl-cta reveal">
+        <a class="btn" href="pages/cronologia.html">Abrir la cronología interactiva</a>
+      </div>
+    </section>
+
+    <!-- ACCESO A SECCIONES -->
+    <section class="section surface-light" id="secciones">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Recorre el archivo</h2>
+          <p class="muted">Cada sección responde a una parte de la pregunta central.</p>
+        </div>
+        <div class="card-grid">
+          <a class="card reveal" href="pages/contexto.html"><h3>Contexto histórico</h3><p>La China que recibió el nuevo régimen en 1949.</p></a>
+          <a class="card reveal" href="pages/cronologia.html"><h3>Cronología interactiva</h3><p>Los hechos clave, año por año.</p></a>
+          <a class="card reveal" href="pages/red-historica.html"><h3>Red histórica</h3><p>Personas, instituciones y sus vínculos.</p></a>
+          <a class="card reveal" href="pages/documental.html"><h3>Documental</h3><p>Imágenes y testimonios audiovisuales.</p></a>
+          <a class="card reveal" href="pages/consecuencias.html"><h3>Consecuencias</h3><p>Efectos políticos, económicos y sociales.</p></a>
+          <a class="card reveal" href="pages/fuentes.html"><h3>Fuentes</h3><p>Bibliografía y material consultado.</p></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script type="module" src="js/main.js"></script>
+</body>
 </html>

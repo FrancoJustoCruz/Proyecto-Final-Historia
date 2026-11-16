@@ -1,0 +1,6 @@
+.card-grid { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+.card { display: flex; flex-direction: column; gap: var(--space-1); padding: var(--space-3); background: var(--paper-light); color: var(--text-on-light); text-decoration: none; border-left: 4px solid var(--crimson); transition: transform .25s var(--ease), border-color .25s var(--ease); }
+.card:hover { transform: translateY(-3px); border-color: var(--gold); }
+.card p { font-size: var(--step--1); color: #52463d; }
+.card:nth-child(even) { margin-top: var(--space-3); }
+@media (max-width: 40rem) { .card:nth-child(even) { margin-top: 0; } }
