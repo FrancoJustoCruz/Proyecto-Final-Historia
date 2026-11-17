@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Red histórica | El maoísmo en China, 1949–1976</title>
+  <meta name="description" content="Red interactiva de causas, acontecimientos, actores y consecuencias del maoísmo en China.">
   <link rel="stylesheet" href="../css/base/variables.css">
   <link rel="stylesheet" href="../css/base/reset.css">
   <link rel="stylesheet" href="../css/base/typography.css">
@@ -13,26 +14,56 @@
   <link rel="stylesheet" href="../css/layout/footer.css">
   <link rel="stylesheet" href="../css/components/buttons.css">
   <link rel="stylesheet" href="../css/pages/interior.css">
+  <link rel="stylesheet" href="../css/pages/cronologia.css">
+  <link rel="stylesheet" href="../css/pages/red-historica.css">
   <link rel="stylesheet" href="../css/responsive.css">
 </head>
 <body data-page="red-historica" data-root="../">
   <div id="site-header"></div>
+
   <main id="contenido">
     <header class="page-head">
       <div class="container">
-        <h1>Red histórica</h1>
-        <p class="lede">Personas, instituciones y sus vínculos.</p>
+        <h1>Red de relaciones históricas</h1>
+        <p class="lede">Causas, acontecimientos, actores y consecuencias, unidos por relaciones que se pueden rastrear en las fuentes.</p>
       </div>
     </header>
-    <section class="section surface-light">
-      <div class="container">
-        <div class="pending-note">
-          <p>Esta sección se desarrolla en la siguiente etapa del proyecto.</p>
-          <a class="btn" href="../index.html">Volver al inicio</a>
+
+    <section class="net-section surface-dark" aria-label="Red interactiva">
+      <div class="container net-layout">
+        <div class="net-main">
+          <div class="net-toolbar">
+            <div class="net-filters" id="net-filters" role="group" aria-label="Filtrar por categoría"></div>
+            <div class="net-actions">
+              <button class="btn btn--ghost" id="net-preset" type="button">Solo acontecimientos y actores</button>
+              <button class="btn" id="net-reset" type="button">Restablecer</button>
+            </div>
+          </div>
+
+          <div class="net-stage" id="net-stage">
+            <svg id="net-svg" role="group" aria-label="Red de relaciones históricas"></svg>
+            <div class="net-zoom" role="group" aria-label="Controles de zoom">
+              <button id="net-zoom-in" type="button" aria-label="Acercar">+</button>
+              <button id="net-zoom-out" type="button" aria-label="Alejar">−</button>
+              <button id="net-fit" type="button" aria-label="Ajustar a la pantalla">⤢</button>
+            </div>
+          </div>
+          <p class="muted net-hint">Arrastra el fondo para mover la red; usa la rueda o dos dedos para acercar. Selecciona un nodo para resaltar sus conexiones.</p>
+          <p class="muted" id="net-status" role="status"></p>
+
+          <section class="net-legend" aria-labelledby="leyenda-titulo">
+            <h2 id="leyenda-titulo">Tipos de conexión</h2>
+            <div class="legend-grid" id="net-legend-items"></div>
+            <p class="muted">Cada botón también muestra u oculta ese tipo de relación. Las conexiones cronológicas no afirman causalidad.</p>
+          </section>
         </div>
+
+        <aside class="net-panel" id="net-panel" aria-live="polite" aria-label="Información del nodo seleccionado"></aside>
       </div>
+      <noscript><p class="container">Esta red necesita JavaScript activado.</p></noscript>
     </section>
   </main>
+
   <div id="site-footer"></div>
   <script type="module" src="../js/main.js"></script>
 </body>
