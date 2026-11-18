@@ -1,0 +1,364 @@
+
+/* =========================================
+   CONTEXTO HISTÓRICO
+========================================= */
+
+.context-header {
+  position: relative;
+}
+
+.context-period {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 500px;
+  margin-top: 3rem;
+  color: var(--color-muted, #b8b0a4);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.period-line {
+  height: 1px;
+  flex: 1;
+  background: var(--color-accent, #c5a46d);
+}
+
+/* INTRODUCCIÓN */
+
+.context-intro {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.context-intro h2 {
+  max-width: 450px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.1;
+}
+
+/* ANTECEDENTES */
+
+.context-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.context-card {
+  padding: 1.6rem;
+  min-height: 290px;
+  border: 1px solid rgba(197, 164, 109, 0.25);
+  background: rgba(255, 255, 255, 0.025);
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.context-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent, #c5a46d);
+}
+
+.context-date {
+  display: block;
+  margin-bottom: 2.5rem;
+  color: var(--color-accent, #c5a46d);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.context-card h3 {
+  margin-bottom: 0.8rem;
+}
+
+.context-card p {
+  color: var(--color-muted, #b8b0a4);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* GUERRA CIVIL */
+
+.context-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.context-visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 420px;
+  padding: 2rem;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(23, 21, 19, 0.95),
+      rgba(23, 21, 19, 0.12)
+    ),
+    linear-gradient(135deg, #514438, #211d19);
+  border: 1px solid rgba(197, 164, 109, 0.25);
+}
+
+.civil-war-visual::before {
+  content: "1949";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: rgba(255, 255, 255, 0.08);
+  font-size: clamp(5rem, 12vw, 10rem);
+  font-weight: 800;
+}
+
+.visual-label {
+  position: relative;
+  color: var(--color-accent, #c5a46d);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.context-visual p {
+  position: relative;
+  margin-top: 0.7rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.context-text h2 {
+  margin-bottom: 1.5rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: var(--color-accent, #c5a46d);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* FUNDACIÓN */
+
+.context-foundation {
+  padding: clamp(4rem, 9vw, 8rem) 0;
+  text-align: center;
+  border-top: 1px solid rgba(197, 164, 109, 0.2);
+  border-bottom: 1px solid rgba(197, 164, 109, 0.2);
+}
+
+.foundation-content {
+  max-width: 900px;
+}
+
+.foundation-content h2 {
+  margin: 1rem auto 1.5rem;
+  max-width: 750px;
+  font-size: clamp(2.3rem, 5vw, 4.5rem);
+  line-height: 1.08;
+}
+
+.foundation-lede {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--color-muted, #b8b0a4);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.foundation-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(197, 164, 109, 0.25);
+}
+
+.foundation-facts article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.foundation-facts strong {
+  color: var(--color-accent, #c5a46d);
+  font-size: 1.35rem;
+}
+
+.foundation-facts span {
+  color: var(--color-muted, #b8b0a4);
+  font-size: 0.9rem;
+}
+
+/* CONSOLIDACIÓN */
+
+.consolidation-list {
+  max-width: 900px;
+  margin: 3rem auto 0;
+}
+
+.consolidation-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(23, 21, 19, 0.16);
+}
+
+.consolidation-year {
+  color: var(--color-accent, #8d2525);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.consolidation-item h3 {
+  margin-bottom: 0.6rem;
+}
+
+.consolidation-item p {
+  max-width: 700px;
+  line-height: 1.8;
+}
+
+/* PERFIL DE MAO */
+
+.mao-profile {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.mao-profile-heading h2 {
+  max-width: 450px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.mao-profile-content {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.mao-monogram {
+  display: grid;
+  place-items: center;
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(197, 164, 109, 0.45);
+  color: var(--color-accent, #c5a46d);
+  font-size: 4rem;
+}
+
+/* CONCLUSIÓN */
+
+.context-conclusion {
+  max-width: 850px;
+}
+
+.context-conclusion h2 {
+  margin: 1rem 0 1.5rem;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.12;
+}
+
+.context-conclusion p {
+  max-width: 750px;
+  line-height: 1.8;
+}
+
+.context-conclusion .btn {
+  margin-top: 1.5rem;
+}
+
+/* NAVEGACIÓN */
+
+.context-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .context-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .context-split,
+  .mao-profile {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .context-intro {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .context-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .context-card {
+    min-height: auto;
+  }
+
+  .context-date {
+    margin-bottom: 1.2rem;
+  }
+
+  .context-visual {
+    min-height: 280px;
+  }
+
+  .foundation-facts {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .consolidation-item {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+
+  .mao-profile-content {
+    grid-template-columns: 1fr;
+  }
+
+  .context-navigation {
+    flex-direction: column;
+  }
+
+  .context-navigation .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .context-card {
+    transition: none;
+  }
+
+  .context-card:hover {
+    transform: none;
+  }
+}
+

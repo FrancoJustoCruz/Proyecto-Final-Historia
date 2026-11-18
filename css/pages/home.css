@@ -9,13 +9,29 @@
 
 /* Hero */
 .hero { position: relative; min-height: calc(100svh - var(--header-h)); display: flex; flex-direction: column; justify-content: flex-end; padding-block: var(--space-5) var(--space-4); overflow: hidden; isolation: isolate; margin-top: calc(var(--header-h) * -1); padding-top: calc(var(--header-h) + var(--space-5)); }
-.hero-photo { position: absolute; inset: 0; z-index: -1;
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background-image:
-    linear-gradient(100deg, rgba(20,16,14,.92) 20%, rgba(20,16,14,.35) 70%, rgba(122,26,31,.45) 100%),
-    url("../../assets/images/backgrounds/hero.jpg"),
-    radial-gradient(ellipse at 80% 20%, #5a1418, #14100e 70%);
-  background-size: cover; background-position: center; background-color: var(--ink);
-  animation: slow-zoom 24s var(--ease) both; }
+    linear-gradient(
+      90deg,
+      rgba(20, 16, 14, .90) 0%,
+      rgba(20, 16, 14, .65) 45%,
+      rgba(20, 16, 14, .35) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(20, 16, 14, .65),
+      transparent 65%
+    ),
+    url("../../assets/images/backgrounds/background_1.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: var(--ink);
+  animation: slow-zoom 24s var(--ease) both;
+}
 @keyframes slow-zoom { from { transform: scale(1.08); } to { transform: scale(1); } }
 .hero-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: var(--space-4); align-items: end; }
 .hero-period { font-family: var(--font-display); font-size: var(--step-2); color: var(--gold); letter-spacing: .08em; padding-bottom: var(--space-2); margin-bottom: var(--space-2); border-bottom: 1px solid var(--gold); display: inline-block; animation: enter .9s var(--ease) .1s both; }
@@ -59,4 +75,5 @@
   .moments { grid-template-columns: 1fr; }
   .moment--lead { display: flex; }
   .scroll-cue { display: none; }
+  .hero-photo { background-position: 60% center; }
 }

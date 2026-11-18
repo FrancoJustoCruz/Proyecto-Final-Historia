@@ -1,0 +1,354 @@
+
+/* =========================================
+   FUENTES Y BIBLIOGRAFÍA
+========================================= */
+
+.sources-header {
+  position: relative;
+}
+
+.sources-intro {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.sources-intro h2 {
+  max-width: 450px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.1;
+}
+
+/* NAVEGACIÓN DE CATEGORÍAS */
+
+.source-categories {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(197, 164, 109, 0.2);
+  border-bottom: 1px solid rgba(197, 164, 109, 0.2);
+}
+
+.source-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.source-nav a {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(197, 164, 109, 0.3);
+  color: var(--color-muted, #b8b0a4);
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.source-nav a:hover {
+  background: var(--color-accent, #c5a46d);
+  color: #171513;
+}
+
+/* TARJETAS DE FUENTES PRIMARIAS */
+
+.source-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+}
+
+.source-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+  padding: 1.7rem;
+  border: 1px solid rgba(23, 21, 19, 0.15);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.source-type {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--color-accent, #8d2525);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.source-card h3 {
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.source-card p,
+.research-card p {
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+.source-relevance {
+  margin-top: 1rem;
+}
+
+.source-card .source-link {
+  margin-top: auto;
+}
+
+.source-link,
+.bibliography-content a,
+.research-card a,
+.resource-item a {
+  display: inline-block;
+  margin-top: 1.2rem;
+  color: var(--color-accent, #8d2525);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.source-link:hover,
+.bibliography-content a:hover,
+.research-card a:hover,
+.resource-item a:hover {
+  text-decoration: underline;
+}
+
+.source-note {
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem;
+  border-left: 3px solid var(--color-accent, #8d2525);
+  background: rgba(141, 37, 37, 0.05);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+/* BIBLIOGRAFÍA */
+
+.bibliography-list {
+  max-width: 1000px;
+  margin: 3rem auto 0;
+}
+
+.bibliography-item {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(197, 164, 109, 0.2);
+}
+
+.bibliography-number {
+  color: var(--color-accent, #c5a46d);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.bibliography-content h3 {
+  max-width: 800px;
+  margin-bottom: 0.6rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.65rem);
+  line-height: 1.3;
+}
+
+.bibliography-author {
+  margin-bottom: 1rem;
+  color: var(--color-muted, #b8b0a4);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.bibliography-content > p:not(.bibliography-author) {
+  max-width: 750px;
+  line-height: 1.75;
+}
+
+.bibliography-content .source-type {
+  color: var(--color-accent, #c5a46d);
+}
+
+/* ARTÍCULOS CIENTÍFICOS */
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+}
+
+.research-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 380px;
+  padding: 1.7rem;
+  border: 1px solid rgba(23, 21, 19, 0.15);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.research-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.research-card a {
+  margin-top: auto;
+}
+
+/* RECURSOS DIGITALES */
+
+.resource-list {
+  max-width: 1000px;
+  margin: 2.5rem auto 0;
+}
+
+.resource-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+  padding: 1.8rem 0;
+  border-top: 1px solid rgba(197, 164, 109, 0.2);
+}
+
+.resource-item h3 {
+  margin-bottom: 0.5rem;
+}
+
+.resource-item p {
+  max-width: 700px;
+  color: var(--color-muted, #b8b0a4);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.resource-item a {
+  color: var(--color-accent, #c5a46d);
+  white-space: nowrap;
+}
+
+/* METODOLOGÍA */
+
+.methodology-section {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 4rem;
+}
+
+.methodology-section h2 {
+  max-width: 420px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.1;
+}
+
+.methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.8rem;
+}
+
+.methodology-grid article {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(23, 21, 19, 0.2);
+}
+
+.methodology-grid article > span {
+  display: block;
+  margin-bottom: 1.2rem;
+  color: var(--color-accent, #8d2525);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.methodology-grid h3 {
+  margin-bottom: 0.6rem;
+}
+
+.methodology-grid p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* CIERRE */
+
+.sources-final {
+  max-width: 850px;
+}
+
+.sources-final h2 {
+  margin: 1rem 0 1.5rem;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.12;
+}
+
+.sources-final p {
+  max-width: 750px;
+  line-height: 1.8;
+}
+
+.sources-final .btn {
+  margin-top: 1.5rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+  .source-grid,
+  .article-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .methodology-section {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .sources-intro {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .source-grid,
+  .article-grid,
+  .methodology-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .source-card,
+  .research-card {
+    min-height: auto;
+  }
+
+  .bibliography-item {
+    grid-template-columns: 40px 1fr;
+    gap: 1rem;
+  }
+
+  .resource-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .resource-item a {
+    white-space: normal;
+  }
+
+  .source-nav {
+    flex-direction: column;
+  }
+
+  .source-nav a {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .source-nav a {
+    transition: none;
+  }
+}
+

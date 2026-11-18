@@ -1,5 +1,79 @@
-.page-head { padding-block: var(--space-5) var(--space-4); background: radial-gradient(ellipse at 90% 0%, rgba(122,26,31,.5), transparent 60%), var(--ink); border-bottom: 1px solid rgba(184,148,74,.3); }
+.page-head {
+  padding-block: var(--space-5) var(--space-4);
+  background:
+    radial-gradient(
+      ellipse at 90% 0%,
+      rgba(122, 26, 31, .5),
+      transparent 60%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(20, 16, 14, .94),
+      rgba(20, 16, 14, .72)
+    ),
+    url("../../assets/images/backgrounds/background_2.jpg");
+
+  background-size: cover;
+  background-position: center 45%;
+  background-repeat: no-repeat;
+
+  border-bottom: 1px solid rgba(184, 148, 74, .3);
+}
 .page-head h1 { font-size: var(--step-3); margin-bottom: var(--space-2); }
 .page-head .lede { color: var(--paper); }
 .pending-note { max-width: 40rem; padding: var(--space-3); background: var(--paper-light); border-left: 4px solid var(--crimson); }
 .pending-note .btn { margin-top: var(--space-2); }
+
+/* DOCUMENTOS HISTÓRICOS */
+
+.document-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-block: 2.5rem;
+}
+
+.document-card {
+  padding: 1rem;
+  background: var(--paper-light);
+  border: 1px solid rgba(184, 148, 74, .3);
+}
+
+.document-card img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  background: #e8e4dc;
+  margin-bottom: 1rem;
+}
+
+.document-card h3 {
+  color: var(--crimson);
+  margin-bottom: .5rem;
+}
+
+.document-card p {
+  color: var(--text-on-light);
+  font-size: .9rem;
+  line-height: 1.6;
+}
+
+.document-reference {
+  display: block;
+  margin-top: 1rem;
+  font-size: .8rem;
+  color: #777;
+  border-top: 1px solid rgba(0, 0, 0, .15);
+  padding-top: .7rem;
+}
+
+@media (max-width: 52rem) {
+  .document-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .document-card img {
+    height: 220px;
+  }
+}
