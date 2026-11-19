@@ -1,6 +1,15 @@
 import { $, $$, getPage } from "./utils.js";
 
+function initHeaderState() {
+  const header = $(".site-header");
+  if (!header) return;
+  const update = () => header.classList.toggle("is-scrolled", window.scrollY > 40);
+  update();
+  window.addEventListener("scroll", update, { passive: true });
+}
+
 export function initNavigation() {
+  initHeaderState();
   const toggle = $(".nav-toggle");
   const list = $("#nav-list");
   if (!toggle || !list) return;

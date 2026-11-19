@@ -1,0 +1,6 @@
+/* Animaciones y entradas compartidas por Inicio, Contexto y Consecuencias */
+@keyframes enter { from { opacity: 0; translate: 0 1.25rem; } to { opacity: 1; translate: 0 0; } }
+@keyframes slow-zoom { from { transform: scale(1.07); } to { transform: scale(1); } }
+
+.reveal { transition: opacity .8s var(--ease), translate .8s var(--ease); }
+.reveal.is-pending { opacity: 0; translate: 0 1.25rem; }

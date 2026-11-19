@@ -4,3 +4,9 @@
 .section { padding-block: var(--space-5); }
 .skip-link { position: absolute; left: -999px; top: 0; background: var(--gold); color: var(--ink); padding: .5rem 1rem; z-index: 100; }
 .skip-link:focus { left: 0; }
+
+/* Los contenedores de header y footer no generan caja propia: así el header sticky funciona. */
+#site-header, #site-footer { display: contents; }
+
+.section-head { max-width: 40rem; margin-bottom: var(--space-4); }
+.surface-light .muted, .surface-light figcaption { color: #6b5f52; }

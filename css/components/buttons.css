@@ -2,3 +2,13 @@
 .btn:hover { background: var(--crimson-bright); }
 .btn--ghost { background: transparent; border-color: var(--gold); color: var(--gold); }
 .btn--ghost:hover { background: rgba(184,148,74,.12); }
+
+.btn[disabled] { opacity: .4; cursor: not-allowed; }
+
+.chip { padding: .45rem 1rem; border: 1px solid var(--gold); background: transparent; border-radius: 2rem; font-size: var(--step--1); transition: background .25s var(--ease); }
+.chip:hover { background: rgba(184,148,74,.15); }
+.chip[aria-pressed="true"] { background: var(--crimson); border-color: var(--crimson-bright); color: var(--paper-light); }
+
+.surface-light .btn--ghost { color: var(--crimson); border-color: var(--crimson); }
+.surface-light .btn--ghost:hover { background: rgba(122,26,31,.08); }
+.chip-count { color: inherit; opacity: .8; font-size: .75rem; }
