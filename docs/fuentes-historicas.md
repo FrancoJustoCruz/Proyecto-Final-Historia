@@ -1,6 +1,4 @@
-# Catálogo de fuentes y lista de verificación
 
-Generado a partir de `FUENTES` en `js/modules/timeline/timeline-data.js`. Marca cada casilla cuando hayas comprobado la edición, añadido páginas o URL y contrastado las afirmaciones que respalda.
 
 ## Fuentes primarias
 
